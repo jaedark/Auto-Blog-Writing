@@ -176,6 +176,9 @@ export default function Home() {
                 {copied ? "✅ 복사됨" : "📋 복사"}
               </button>
             </div>
+            <p className="text-xs text-slate-400 mb-3">
+              글자수: {output.replace(/\s/g, "").length.toLocaleString()}자 (공백 제외)
+            </p>
             <div
               ref={outputRef}
               className="prose text-slate-700 text-sm leading-relaxed whitespace-pre-wrap"
